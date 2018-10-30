@@ -1,0 +1,182 @@
+#!/usr/bin/bash
+a='\e[1;31m'
+b='\e[1;32m'
+c='\e[1;33m'
+d='\e[1;34m'
+e='\e[1;35m'
+f='\e[1;36m'
+g='\e[1;37m'
+NOW=`date "+%d.%m.%Y"`
+TIME=`date "+%H:%M"`
+sleep 3
+clear
+figlet -f slant "M3D" |lolcat
+ echo    "======================================"|lolcat
+ echo      " AUTHOR      : M3D"|lolcat
+ echo      " Version      : M3Dv1"|lolcat
+echo      " Whatsapp    : 081353398031 "|lolcat
+ echo      " Date        : " $NOW | lolcat
+ echo      " Time        : " $TIME | lolcat
+ echo    "======================================"|lolcat
+echo -e $b '    <<=========[M3D]=========>>'
+sleep 1
+echo "  Pilihlah Tools Spam Yang Kamu Inginkan"
+echo -e $b '<<====================================>>'
+echo -e $a ' [01] Spam Telephone Tokopedia'
+echo -e $b ' [02] Spam SMS Tokopedia'
+echo -e $c ' [03] Spam SMS Telkomsel'
+echo -e $d ' [04] Spam SMS Matahari Maal'
+echo -e $e ' [05] Spam SMS HooqTV'
+echo -e $f ' [06] Spam SMS KFC'
+echo -e $g ' [07] Spam SMS PHD'
+echo -e $a ' [08] Spam SMS Whiskas'
+echo -e $b ' [09] Spam ZiPAY'
+echo -e $c ' [10] Spam SMS Jd.Id'
+echo -e $d ' [11] Spam SMS Grab'
+echo -e $e ' [12] Spam SMS Tri'
+echo -e $f ' [13] Spam Email'
+echo -e $g ' [00] Keluar'
+echo -e $b '<<====================================>>'
+read -p " [M3D]=>> " med
+
+if [ $med = 1 ] || [ $med = 01 ]
+then
+cd module
+clear
+toilet -f slant --gay "   M3D"
+php tokopedia1.php | lolcat
+exit
+fi
+
+if [ $med = 2 ] || [ $med = 02 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D"
+php tokopedia2.php | lolcat
+exit
+fi
+
+if [ $med = 3 ] || [ $med = 03 ]
+then
+cd module
+clear
+toilet -f slant --gay "   M3D"
+php telkomsel.php | lolcat
+exit
+fi
+
+if [ $med = 4 ] || [ $med = 04 ]
+then
+cd module
+clear
+toilet -f slant --gay "   M3D"
+php mataharimall.php | lolcat
+exit
+fi
+
+if [ $med = 5 ] || [ $med = 05 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D"
+php hooq.php | lolcat
+exit
+fi
+
+if [ $med = 6 ] || [ $med = 06 ]
+then
+cd module
+clear
+toilet -f slant --gay "   M3D"
+php kfc.php | lolcat
+exit
+fi
+
+if [ $med = 7 ] || [ $med = 07 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D"
+php phd.php | lolcat
+exit
+fi
+
+if [ $med = 8 ] || [ $med = 08 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D"
+php whiskas.php | lolcat
+exit
+fi
+
+if [ $med = 9 ] || [ $med = 09 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D"
+php zipay.php | lolcat
+exit
+fi
+
+if [ $med = 10 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D Tools"
+php Jd.Id.php | lolcat
+exit
+fi
+
+if [ $med = 11 ]
+then
+cd module
+clear
+toilet -f slant --gay "   M3D"
+read -p " [Nomor Target]=>> " grab
+python2 spammer.py $grab --delay 30
+exit
+fi
+
+if [ $med = 12 ]
+then
+cd module
+clear
+toilet -f slant --gay "    M3D"
+bash tri | lolcat
+exit
+fi
+
+if [ $med = 13 ]
+then
+cd module
+toilet -f slant --gay "    M3D"
+python2 SpamEmail.py
+exit
+fi
+
+if [ $med = 0 ] || [ $med = 00 ]
+then
+echo -e $a 'Yakin Ingin Keluar'
+echo -e $b 'Silahkan Pilih'
+sleep 1
+echo -e $c '( Y ) Untuk Keluar dan ( N ) Untuk Netap'
+read -p " [Y/N]=> " keluar
+fi
+
+if [ $keluar = Y ]
+then
+echo -e $f 'Jangan Kangen Ya'
+sleep 1
+echo -e $d 'Bay-Bay'
+exit
+fi
+
+if [ $keluar = N ]
+then
+clear
+echo -e $c 'Selamat Datang Kembali'
+sleep 5
+bash m3d
+fi
